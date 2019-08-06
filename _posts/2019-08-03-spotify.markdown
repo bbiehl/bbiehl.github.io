@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Spotify"
+date:   2019-08-03 12:59:41 -0500
+categories: blog
+---
+
+I just downloaded 46 songs on Spotify in under a minute. 
+Remember when it used to take 5+ minutes to download one song on Napster? 
+What does the future hold? 
+Where are we going?
