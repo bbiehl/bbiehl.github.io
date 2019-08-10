@@ -1,35 +1,37 @@
 ---
-category: Article
+category: article
 tags: javascript
 description: Javascript Basics
 layout: post
 image:
 ---
 
-## 1.1 [Introducing JavaScript](#11-intro)
+I don't work with JavaScript much, but when I do it's handy to have some notes.
+
+1.1 [Introducing JavaScript](#11-intro)
 * Learn about the most popular scripting language on the planet. The language that drives millions of interactive web sites, powers fast web servers and can even be used to build desktop applications. In this stage, you'll create your first JavaScript program and learn how to troubleshoot your programming mistakes.
 
-## 1.2 [Storing and Tracking Information with Variables](#12-variables)
+1.2 [Storing and Tracking Information with Variables](#12-variables)
 * Learn how to use variables to store information that changes during a program, like the score in a game, or a sales total. You'll also learn about different data types in JavaScript like string, numbers and boolean values.
 
-## 1.3 [Working With Numbers](#13-numbers)
+1.3 [Working With Numbers](#13-numbers)
 * Numbers are everywhere in programming. You use them to track a player's score in a game, to calculate the cost of shipping a product, or just to count the number of times a "Like" button was clicked on a page. In this section of the course, you'll learn how to do basic math in JavaScript.
 
-## 1.4 [Making Decisions with Conditional Statements](#14-conditionals)
+1.4 [Making Decisions with Conditional Statements](#14-conditionals)
 * Conditional statements let you control the "flow" of your program. They let you run different code based on conditions in your program.
 
-## 1.5 [Creating Reusable Code with Functions](#15-functions)
+1.5 [Creating Reusable Code with Functions](#15-functions)
 * JavaScript functions are a powerful tool that let you create re-usable chunks of code. They make programming faster, easier and less error-prone. They are also one of the most important concepts in JavaScript programming.
 
 ***
 
-# 1.1 Intro
+### 1.1 Intro
 * JavaScript is used to build complex web apps, like GMail, Google Docs, and Google Maps.
 * You can use JavaScript on a web server.
 * Syntax is like the vocabulary and grammar of the language.  It's a language's commands as well as the instructions for putting them together to create a program.
 * JavaScript lets us add interactive components to a site like photo galleries, tabbed panels, or form validation.
 
-### First JavaScipt Program
+#### First JavaScipt Program
 * Some common commands and fundamental building block of a program and statement.
 
 ```js
@@ -38,7 +40,7 @@ document.write("<h1>Welcome to JavaScript Basics</h1>");
 alert('thanks for visiting!doc')
 ```
 
-### Where Does JavaScipt Go?
+#### Where Does JavaScipt Go?
 * Link a JavaScript file to a web page using the ```<script>``` tag and the src property: 
 
 ```javascript
@@ -56,7 +58,7 @@ alert("Hello there.");
 * Never link to a file and include JavaScript inside the same ```<script>``` tag.
 * Place the `<script>` tag in the head or the last line of the body.
 
-### The JavaScript Console
+#### The JavaScript Console
 * Chrome Console Keyboard Shortcuts
   * Mac: Cmd + Option + J
 
@@ -68,7 +70,7 @@ console.log('Program Complete');
 
 > When a browser "executes" a JavaScript program, the browser is reading and acting on the JavaScript programming, aka "running" the program.  (Running and Executing a program mean the same thing.)
 
-### Adding Scripts and Simple JavaScript Commands
+#### Adding Scripts and Simple JavaScript Commands
 * At the beginning of this script on line 9, type the code required to print 'Begin program' to the browser's JavaScript console.
 * At the end of this script after the `document.write()`, type the code required to print 'End program' to the browser's JavaScript console.
 
@@ -89,7 +91,7 @@ console.log("End program");
 </html>
 ```
 
-### Review
+#### Review
 
 * A syntax error is a grammatical mistake like mistyping a JavaScript command or forgetting a closing parentheses or quote mark.
 * We use the JavaScript Console to find errors and send hidden messages that show how our program is running.
@@ -97,7 +99,7 @@ console.log("End program");
 ***
 
 # 1.2 Variables
-### Create a Variable
+#### Create a Variable
 ```js
 var message = "Hello!";
 alert(message);
@@ -106,19 +108,19 @@ alert(message);
 ```
 > notice the second instance of message, we don't need to define it twice.
 
-### Naming Variables
+#### Naming Variables
 * Some words are reserved.
   * [JavaScript Reserved Words](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords)
   * We can begin a variable name with $ or _.
 
 ***
 
-### Strings and Numbers
+#### Strings and Numbers
 * Same rules as Ruby.
 
 ***
 
-### Create a Variable with a String
+#### Create a Variable with a String
 ```js
 var player = 'Jasmine';
 document.write(player);
@@ -126,7 +128,7 @@ document.write(player);
 
 ***
 
-### Capturing Visitor Input and Writing it to the Page
+#### Capturing Visitor Input and Writing it to the Page
 * The `prompt()` command
   * `prompt()` captures visitor input from a dialog box. You can store that input in a variable like this:
 ```js
@@ -138,7 +140,7 @@ alert(answer);
 
 ***
 
-### Combining Strings (Concatenation)
+#### Combining Strings (Concatenation)
 ```js
 var visitor = prompt("What is your name?");
 var message = "Hello "
@@ -159,7 +161,7 @@ alert("Hello " + fullName);
 
 ***
 
-### Working with Strings and Finding Help
+#### Working with Strings and Finding Help
 * use the [Mozilla Developer Network (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) to explore the JavaScript language.
 
 * Some String Properties and Methods
@@ -197,7 +199,7 @@ alert(shout);
 
 ***
 
-### Review
+#### Review
 ```js
 var adjective = prompt("type an adjective");
 var verb = prompt("type a verb");
@@ -209,17 +211,17 @@ document.write("<h2>"+ adjective + " " + noun + " " + verb +"</h2>");
 ***
 
 # 1.3 Numbers
-### Storing Numbers in Variables
+#### Storing Numbers in Variables
 ```javascript
 var age = 40; // Integer
 var price = 1.99; // Float
 var miles = "200"; // String
 ```
 
-### Doing Math
+#### Doing Math
 > console: NaN means "not a number".
 
-### Numbers and Strings
+#### Numbers and Strings
 ```javascript
 var str = '49 steps';
 var num = parseInt(str);
@@ -229,7 +231,7 @@ var str = '102.99%';
 var num = parseFloat(str);
 // num now holds the number 102.99
 ```
-### Challenge
+#### Challenge
 _index.html_
 ```html
 <!DOCTYPE html>
@@ -264,15 +266,15 @@ sentence += ' programmer who wanted to use JavaScript to ' + verb;
 sentence += ' the ' + noun + '.</h2>';
 document.write(sentence);
 ```
-### The Math Object
+#### The Math Object
 [Mozilla Developer Network page on the Math object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
-### Using Math Methods
+#### Using Math Methods
 ```javascipt
 var temperature = 37.5;
 alert(Math.round(temperature));
 alert(Math.floor(temperature));
 ```
-### Create a Random Number
+#### Create a Random Number
 _index.html_
 ```html
 <!DOCTYPE html>
@@ -355,7 +357,7 @@ if ( answer.toUpperCase() === "JAVASCRIPT") {
   document.write("<p>Wrong, JavaScript is the best!.</p>")
 }
 ```
-### Comparison Operators
+#### Comparison Operators
 * (3>2) is true
 * ("apple" < "bear") is true
 * ("3" == 3) is true
@@ -363,7 +365,7 @@ if ( answer.toUpperCase() === "JAVASCRIPT") {
 * (100 <= 100) is true
 * (100 !== 100) is false, strict 'not equals' operator
 
-### Random Number Guessing Game
+#### Random Number Guessing Game
 _index.html_
 ```html
 <!DOCTYPE html>
@@ -391,7 +393,7 @@ if (parseInt(guess) === randomNumber ) {
   document.write("<p>Sorry, The number was " + randomNumber + "</p>");
 }
 ```
-### Boolean Values
+#### Boolean Values
 same _index.html_
 
 _script.js_
@@ -408,7 +410,7 @@ if (correctGuess ) {
   document.write('<p>Sorry. the number was ' + randomNumber + '</p>');
 }
 ```
-### Improving the Random Number Guessing Game with if/else
+#### Improving the Random Number Guessing Game with if/else
 same _index.html_
 
 _script.js_
@@ -435,7 +437,7 @@ if ( correctGuess ) {
     document.write('<p>Sorry. The number was ' + randomNumber + '</p>'); 
 }
 ```
-### Documenting Code with Comments
+#### Documenting Code with Comments
 same _index.html_
 
 _script.js_
@@ -481,7 +483,7 @@ if ( correctGuess ) {
     document.write('<p>Sorry. The number was ' + randomNumber + '</p>'); 
 }
 ```
-### Combining Multiple Tests Into a Single Condition
+#### Combining Multiple Tests Into a Single Condition
 ```javascript
 /*
 Challenge Instructions
@@ -574,7 +576,7 @@ var myFunction =  function () {
 };
 ```
 [Function Information from Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function)
-### Creating a Function
+#### Creating a Function
 ```javascript
 // Declare the function.
 function alertRandom() {
@@ -585,7 +587,7 @@ function alertRandom() {
 // Call the function.
 alertRandom();
 ```
-### Getting Information From a Function
+#### Getting Information From a Function
 ```javascript
 function getRandomNumber() {
   var randomNumber = Math.floor( Math.random() * 6 ) + 1;
@@ -595,7 +597,7 @@ alert( getRandomNumber() );
 console.log ( getRandomNumber() );
 var dieRoll = getRandomNumber();
 ```
-### Giving Information to Functions
+#### Giving Information to Functions
 ```javascript
 function getRandomNumber( upper ) {
   var randomNumber = Math.floor( Math.random() * upper ) + 1; 
@@ -615,7 +617,7 @@ console.log(getArea( 10, 20, "sq ft" ));
 ```
 * In JavaScript, "scope" refers to where in a program a variable can be accessed.
 * A JavaScript argument is a value you can pass to the function when you call the function.
-### Variable Scope
+#### Variable Scope
 * How JavaScript protects variables from writing over each other.
 * [Everything you wanted to know about JavaScript scope](https://toddmotto.com/everything-you-wanted-to-know-about-javascript-scope/)
 ```javascript
@@ -642,7 +644,7 @@ var person = "Rocco";
 console.log(greeting()); // Lyla
 console.log(person); // Lyla
 ```
-### Random Number Challenge
+#### Random Number Challenge
 ```javascript
 function getRandomNumber( lower, upper ){
   if ( isNaN(lower) || isNaN(upper) ) {
