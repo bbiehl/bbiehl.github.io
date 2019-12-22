@@ -27,6 +27,7 @@ $ npm audit fix
 found 0 vulnerabilities
  in 906331 scanned packages
 ```
+- A definition for middleware that isn't confusing. *"A middleware component sits between the client and the server, processing inbound requests and outbound responses, but it's more than interface that can be used to talk to web server. It's used to group and order modules, which are usually Ruby classes, and specify dependency between them."*
 
 ### 20 Dec
 * I have not spent much time reviewing [The Ruby Style Guide](https://rubystyle.guide/), but most of the time I appear to be getting it right by accident.
